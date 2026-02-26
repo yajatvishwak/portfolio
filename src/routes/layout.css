@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'General Sans', sans-serif;
+	--font-title: 'Rx100', serif;
+	--color-cream: #faf9f6;
+	--color-cream-dark: #f0eeea;
+	--color-ink: #1a1a1a;
+	--color-ink-light: #555;
+	--color-ink-muted: #888;
+	--color-accent: #2563eb;
+	--color-border: #e5e3df;
+	--color-card: #ffffff;
+}
+
+.dark {
+	--color-cream: #0f0f0f;
+	--color-cream-dark: #1a1a1a;
+	--color-ink: #ede9e3;
+	--color-ink-light: #a8a29e;
+	--color-ink-muted: #78716c;
+	--color-accent: #60a5fa;
+	--color-border: #282624;
+	--color-card: #161616;
+}
+
+html {
+	background-color: var(--color-cream);
+	color: var(--color-ink);
+	transition:
+		background-color 0.2s,
+		color 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-title);
+}
+
+body {
+	position: relative;
+}
+
+/* Subtle background texture (sits behind content) */
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	z-index: 0;
+	opacity: 0.2;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-size: 200px 200px;
+}
+
+/* Ensure content layers above the noise (SvelteKit uses display: contents wrapper) */
+body > * {
+	position: relative;
+	z-index: 1;
+}
+
+.dark body::before {
+	opacity: 0.15;
+}
+
+.tldr-dim,
+.tldr-em,
+.tldr-fade {
+	transition:
+		color 0.4s ease,
+		opacity 0.4s ease,
+		font-weight 0.4s ease;
+}
+
+/* Dim text that may contain .tldr-em children — color only, no opacity */
+.tldr .tldr-dim {
+	color: var(--color-ink-muted);
+}
+
+.tldr .tldr-dim .tldr-em {
+	color: var(--color-ink);
+	font-weight: 700;
+}
+
+/* Fade elements with no emphasized children */
+.tldr .tldr-fade {
+	opacity: 0.4;
+}
+
+.tldr .tldr-em {
+	font-weight: 700;
+	color: var(--color-ink);
+}
+
+.tldr [data-skills] .tldr-em {
+	color: #e0ddd5;
+}
+
+::selection {
+	background-color: var(--color-accent);
+	color: white;
+}
