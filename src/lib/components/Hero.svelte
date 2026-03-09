@@ -19,6 +19,14 @@
 		i'm yajat, a software engineer focused on building scalable systems and practical ai
 	</h1>
 	<p class="mt-4 text-pretty text-ink-muted">
-		currently at <span class="tldr-em">Eurofins IT Solutions</span>
+		currently at <span class="tldr-em">Eurofins IT Solutions, Bangalore</span>
 	</p>
+	<div class="mt-6">
+		<a
+			href="#chatbot"
+			class="inline-flex items-center rounded-lg bg-ink px-4 py-2 text-sm font-medium text-cream transition-opacity hover:opacity-90"
+		>
+			Want something specific? Ask Me.
+		</a>
+	</div>
 </section>

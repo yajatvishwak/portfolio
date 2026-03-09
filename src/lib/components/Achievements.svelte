@@ -30,12 +30,6 @@
 			label: '1st Place',
 			title: 'Eurofins Agro AI Hackathon',
 			detail: 'Hackathon · 2025'
-		},
-		{
-			icon: 'newspaper',
-			label: 'Featured',
-			title: 'Times of India',
-			detail: 'News Article · 2016'
 		}
 	];
 </script>

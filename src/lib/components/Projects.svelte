@@ -15,7 +15,7 @@
 		{
 			title: 'Gift Inventory Management System',
 			description:
-				'Full-stack inventory system built with Svelte, Express.js, and MongoDB, serving <span class="tldr-em">500+ concurrent users</span> with <span class="tldr-em">role-based access control</span>. Self-hosted on NGINX with PM2 workers, maintained in <span class="tldr-em">continuous production for over 4 years</span> with ongoing uptime, version updates, and backward compatibility.',
+				'Full-stack inventory system built with Svelte, Express.js, and MongoDB, serving <span class="tldr-em">500+ active users</span> with <span class="tldr-em">role-based access control</span> and modular APIs. Self-hosted on NGINX with PM2 workers and maintained in <span class="tldr-em">continuous production for 4+ years</span> with uptime, version updates, and backward compatibility.',
 			tags: ['Full-Stack', 'Self-Hosted', 'Svelte'],
 			year: '2021',
 			stats: [
@@ -47,6 +47,7 @@
 				</div>
 
 				<h3 class="mb-1.5 text-lg font-semibold text-balance text-ink">{project.title}</h3>
+				<!-- @html safe: project.description is static content from projects array only -->
 				<p class="tldr-dim text-sm text-pretty text-ink-light">{@html project.description}</p>
 
 				{#if project.stats.length > 0}
