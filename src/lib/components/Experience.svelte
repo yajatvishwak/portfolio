@@ -2,7 +2,7 @@
 	const roles = [
 		{
 			period: 'Feb 2024 – Present',
-			title: 'Associate Software Developer',
+			title: 'Software Engineer',
 			company: 'Eurofins IT Solutions',
 			sections: [
 				{
@@ -13,7 +13,8 @@
 						{ text: 'Reduced manual batch processing time from <span class="tldr-em">6–10 hours to 15 minutes</span> per 80 images', key: true },
 						{ text: 'Designed Angular-based upload workflow with controlled concurrency and UI feedback states', key: false },
 						{ text: 'Introduced and productionized <span class="tldr-em">Temporal</span> for asynchronous workflow orchestration with <span class="tldr-em">horizontally scalable</span> worker pods on AKS', key: true },
-						{ text: 'Integrated <span class="tldr-em">GPU-backed Azure ML endpoints</span>, addressed endpoint throttling, tuned CPU parameters, and scaled instances for better throughput', key: false },
+						{ text: 'Eliminated <span class="tldr-em">$1,400/month GPU costs</span> by converting models to ONNX and fine-tuning SegFormer for CPU inference', key: true },
+					{ text: 'Integrated <span class="tldr-em">GPU-backed Azure ML endpoints</span>, addressed endpoint throttling, tuned CPU parameters, and scaled instances for better throughput', key: false },
 						{ text: 'Implemented AprilTag-based perspective correction and morphological calibration logic', key: false },
 						{ text: 'Built skeletonization pipeline using medial axis algorithm to measure fish from SAM2 masks', key: false },
 						{ text: 'Validated output on 100+ annotated samples within <span class="tldr-em">10%</span> of manual measurement', key: false },

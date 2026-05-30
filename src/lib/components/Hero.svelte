@@ -16,11 +16,29 @@
 		</div>
 	</div>
 	<h1 class="text-2xl leading-snug font-semibold text-balance text-ink md:text-4xl md:leading-snug">
-		i'm yajat, a software engineer focused on building scalable systems and practical ai
+		i'm yajat, a software engineer who ships production ai systems and distributed backends
 	</h1>
 	<p class="mt-4 text-pretty text-ink-muted">
-		currently at <span class="tldr-em">Eurofins IT Solutions, Bangalore</span>
+		currently at <span class="tldr-em">Eurofins IT Solutions, Bangalore</span> · building <a href="https://yuzuhire.com" target="_blank" rel="noopener noreferrer" class="tldr-em underline decoration-ink-muted underline-offset-2 hover:decoration-ink">YuzuHire</a> on the side
 	</p>
+
+	<div class="mx-auto mt-6 flex flex-wrap items-center justify-center gap-4 text-sm">
+		<div class="flex flex-col items-center">
+			<span class="text-lg font-bold text-ink tabular-nums">95%</span>
+			<span class="text-[11px] text-ink-muted">time reduced</span>
+		</div>
+		<div class="h-6 w-px bg-border"></div>
+		<div class="flex flex-col items-center">
+			<span class="text-lg font-bold text-ink tabular-nums">$1.4k → $0</span>
+			<span class="text-[11px] text-ink-muted">GPU cost/mo</span>
+		</div>
+		<div class="h-6 w-px bg-border"></div>
+		<div class="flex flex-col items-center">
+			<span class="text-lg font-bold text-ink tabular-nums">960+</span>
+			<span class="text-[11px] text-ink-muted">images/day in prod</span>
+		</div>
+	</div>
+
 	<div class="mt-6">
 		<a
 			href="#chatbot"

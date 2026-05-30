@@ -1,6 +1,7 @@
 <script>
 	const achievements = [
-		{ icon: 'star', label: 'Award', title: 'Star Performer', detail: 'Eurofins · 2025 Q4' },
+		{ icon: 'star', label: 'Promoted', title: 'Associate → Software Engineer', detail: 'Eurofins · 2026 · 100/100 appraisal' },
+		{ icon: 'star', label: 'Award', title: 'Star Performer (back-to-back)', detail: 'Eurofins · 2026 Q1 & 2025 Q4' },
 		{
 			icon: 'trophy',
 			label: '1st Place',
@@ -14,22 +15,16 @@
 			detail: 'Hackathon · 2022'
 		},
 		{
-			icon: null,
-			label: '3rd Place',
-			title: 'Eurofins Technovate Hackathon',
+			icon: 'trophy',
+			label: '1st Place',
+			title: 'Eurofins ShipIt & AgroAI & TICnovate',
 			detail: 'Hackathon · 2025'
 		},
 		{
-			icon: 'trophy',
-			label: '1st Place',
-			title: 'Eurofins ShipIt Hackathon',
-			detail: 'Hackathon · 2025'
-		},
-		{
-			icon: 'trophy',
-			label: '1st Place',
-			title: 'Eurofins Agro AI Hackathon',
-			detail: 'Hackathon · 2025'
+			icon: 'newspaper',
+			label: 'Presented',
+			title: 'Demo to CIO, HR Head & MD India',
+			detail: 'Eurofins · 2026'
 		}
 	];
 </script>

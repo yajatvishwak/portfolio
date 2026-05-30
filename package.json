@@ -26,5 +26,8 @@
 	"dependencies": {
 		"@microsoft/clarity": "^1.0.2",
 		"@openrouter/sdk": "^0.9.11"
+	},
+	"engines": {
+		"node": "22.x"
 	}
 }
